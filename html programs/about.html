@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>
+     Granthalaya
+    </title>
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+
+<style>
+
+* {
+            margin: 0;
+            padding: 0;
+        }
+     
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+     
+        .background {
+            background: rgb(67, 67, 48);
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+     
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+      
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+     
+        .logo img {
+            width: 100px;
+            border-radius: 30px;
+        }
+     
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+     
+        .nav-list li a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+     
+        .nav-list li a:hover {
+            color: whitesmoke;
+        }
+     
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+     
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid whitesmoke;
+            border-radius: 9px;
+        }
+      
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(65, 65, 42);
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+     
+        
+     
+        .text-big {
+            font-family: 'baskerville', gill sans;
+            font-weight: bold;
+            font-size: 35px;
+        }
+     
+        .text-small {
+            font-size: 18px;
+        }
+     
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+     
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+     
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+     
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+     
+        .paras {
+            padding: 0px 65px;
+        }
+     
+       
+        .center {
+            text-align: center;
+        }
+     
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Arial', Georgia, 'Times New Roman';
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+body 
+{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #3a4112;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+  <nav class="navbar background">
+    <ul class="nav-list">
+        <div class="logo">
+            <img src="logo.png">
+            
+                <h1 style="color:rgb(253, 242, 242);font-size:50px;"">Granthalaya</h1>
+              
+         
+           
+        </div>
+        <li><a href="library.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+       
+        <li><a href="jsindex.html">CONTACT</a></li>
+        <li><a href="book.html">BOOK</a></li>
+        
+
+        
+    </ul>
+
+    <div class="rightNav">
+        <input type="text" name="search" id="search">
+        <button class="btn btn-sm">Search</button>
+    </div>
+    
+    <hr>
+    
+</nav>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+ 
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<center>
+  <h1> LOCATION</h1>
+
+  <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.7988314979125!2d77.6950171139938!3d12.791566122266072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c2a832730d1%3A0xef5c4515e33087fd!2sSurya%20City%2C%20Electronics%20City%20Phase%201%2C%20Chandapura%2C%20Bommasandra%2C%20Karnataka%20560099!5e0!3m2!1sen!2sin!4v1660205991789!5m2!1sen!2sin" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</center>
+
+</body>
+</html>

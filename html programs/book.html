@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="book2.css" />
+  <title>Movie Seat Booking</title>
+</head>
+
+<body>
+
+  <nav class="navbar background">
+    <ul class="nav-list">
+        <div class="logo">
+            <img src="logo.png">
+            
+                <h1 style="color:rgb(253, 242, 242);font-size:50px;"">Granthalaya</h1>
+              
+         
+           
+        </div>
+        <li><a href="library.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+       
+        <li><a href="jsindex.html">CONTACT</a></li>
+        <li><a href="book.html">BOOK</a></li>
+      
+
+        
+    </ul>
+
+    <div class="rightNav">
+        <input type="text" name="search" id="search">
+        <button class="btn btn-sm">Search</button>
+    </div>
+    
+    <hr>
+    
+</nav>
+  <div class="movie-container">
+    <label> Avaliable screenings</label>
+    <select id="movie">
+      <option>Steve To The Rescue</option>
+    </select>
+  </div>
+  <ul class="showcase">
+    <li>
+      <div class="seat"></div>
+      <small>N/A</small>
+    </li>
+    <li>
+      <div class="seat selected"></div>
+      <small>Selected</small>
+    </li>
+    <li>
+      <div class="seat occupied"></div>
+      <small>Occupied</small>
+    </li>
+  </ul>
+  <div class="container">
+    <div class="screen"></div>
+    <div class="row">
+      <div class="col col-lg-1 place mx-auto unbooked seat"> A1</div>
+      <div class="col col-lg-1 place mx-auto unbooked seat"> A2</div>
+      <div class="col col-lg-1 place mx-auto unbooked seat"> A3</div>
+      <div class="col col-lg-1 place mx-auto unbooked seat"> A4</div>
+      <div class="col col-lg-1 place mx-auto unbooked seat"> A5</div>
+
+    </div>
+    <div class="row">
+      <div class="col col-lg-1 place mx-auto unbooked seat">B1</div>
+      <div class="col col-lg-1 place mx-auto unbooked seat">B2</div>
+      <div class="col col-lg-1 place mx-auto taken occupied seat">B3</div>
+      <div class="col col-lg-1 place mx-auto taken occupied seat">B4</div>
+      <div class="col col-lg-1 place mx-auto unbooked seat">B5</div>
+
+    </div>
+    <div class="row">
+      <div class="col col-lg-1 place mx-auto unbooked seat">C1</div>
+      <div class="col col-lg-1 place mx-auto unbooked seat">C2</div>
+      <div class="col col-lg-1 place mx-auto taken occupied seat">C3</div>
+      <div class="col col-lg-1 place mx-auto taken occupied seat">C4</div>
+      <div class="col col-lg-1 place mx-auto unbooked seat">C5</div>
+    </div>
+
+  </div>
+  <p class="text">You have selected <span id="count">0</span> seats
+  </p>
+  <div class="container order d-grid gap-2 mx-auto">
+    <input class="btn btn-secondary mx-auto" type="button" value="Confirm Booking" id="submit">
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="book1.jss"></script>
+</body>
+
+</html>
